@@ -1,3 +1,3 @@
 <?php
-echo "<h1>Bienvenido " . $fila['usuario'] . "</h1>";
+echo "<h1>Bienvenido/a " . $fila['usuario'] . "</h1>";
 ?>
