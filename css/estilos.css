@@ -1,0 +1,163 @@
+:root {
+    --color-primario: #3f51b5;
+    --color-primario-hover: #303f9f;
+    --color-secundario: #757575;
+    --color-secundario-hover: #616161;
+    --color-fondo: #f5f5f5;
+    --color-tarjeta: #ffffff;
+    --color-texto: #333333;
+    --color-error: #d32f2f;
+    --radio-borde: 8px;
+    --sombra: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: var(--color-primario);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contenedor {
+    background-color: var(--color-tarjeta);
+    padding: 2rem;
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra);
+    width: 100%;
+    max-width: 400px;
+}
+
+.contenedor.ancho {
+    max-width: 800px;
+}
+
+.texto-centro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.grupo-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: var(--color-primario);
+    outline: none;
+}
+
+input[type="submit"],
+button {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: var(--color-primario-hover);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--color-primario);
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+a {
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.boton {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    margin-top: 0;
+}
+
+a.boton:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.boton-primario {
+    background-color: var(--color-primario);
+}
+
+.boton-secundario {
+    background-color: var(--color-secundario);
+}
+
+.boton-secundario:hover {
+    background-color: var(--color-secundario-hover);
+}
+
+.mensaje-error {
+    background-color: #ffebee;
+    color: var(--color-error);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #ffcdd2;
+}
